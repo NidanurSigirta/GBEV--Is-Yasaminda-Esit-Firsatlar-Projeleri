@@ -1,4 +1,4 @@
-#Example 1
+# Example 1 
 class Car:
     def __init__(self, brand, model, year):
         self.brand = brand
@@ -16,17 +16,18 @@ class ElectricCar(Car):
     def car_info(self):
         return f"{self.year} {self.brand} {self.model} with a {self.battery_size}-kWh battery"
 
-# Using polymorphism via function
 def display_car_info(car):
-    print(car.car_info())
+    print(car.car_info())  
 
+# Objects
 regular_car = Car("Toyota", "Corolla", 2020)
 electric_car = ElectricCar("Tesla", "Model S", 2021, 100)
 
-display_car_info(regular_car)  
-display_car_info(electric_car) 
+display_car_info(regular_car)   
+display_car_info(electric_car)     
 
-# #Examle 2
+
+# # Example 2 
 # class Shape:
 #     def draw(self):
 #         print("Drawing a shape...")
@@ -39,9 +40,7 @@ display_car_info(electric_car)
 #     def draw(self):
 #         print("Drawing a Square...")
 
-# # Polymorphism 
 # shapes = [Circle(), Square(), Shape()]
 
 # for shape in shapes:
-#     shape.draw()
-
+#     shape.draw() 
